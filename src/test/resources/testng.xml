@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="CalculatorSuite" parallel="classes" thread-count="4">
+<!--<suite name="CalculatorSuite" parallel="classes" thread-count="4"> -->
+    <suite name="CalculatorSuite">
     <listeners>
         <!--<listener class-name="listeners.LoggingListener"></listener> -->
         <listener class-name="listeners.CustomerListener"></listener>
@@ -16,9 +17,10 @@
 <classes>
    <!-- <class name="tests.CalculatorPositiveTests"></class>
     <class name="tests.CalculatorNegativeTests"></class>
-    <class name="tests.CalculatorDataProviderTests"></class> -->
+    <class name="tests.CalculatorDataProviderTests"></class>
 
-    <class name="tests.BrokenLinksTest"></class>
+    <class name="tests.BrokenLinksTest"></class>-->
+    <class name="tests.RetryTests"></class>
 
 </classes>
     </test>
