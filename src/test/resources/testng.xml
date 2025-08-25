@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CalculatorSuite" parallel="classes" thread-count="4">
+    <listeners>
+        <listener class-name="listeners.LoggingListener"></listener>
+    </listeners>
+
+    <test name="CalculatorTests">
+        <groups>
+            <run>
+                <exclude name="smoke"/>
+                <include name="datadriven"/>
+            </run>
+        </groups>
+<classes>
+    <class name="tests.CalculatorPositiveTests"></class>
+    <class name="tests.CalculatorNegativeTests"></class>
+    <class name="tests.CalculatorDataProviderTests"></class>
+
+</classes>
+    </test>
+</suite>
